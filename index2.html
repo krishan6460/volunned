@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* Basic reset and alignment */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Centering the container */
+        body, html {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f2f5;
+        }
+
+        /* Styling the form container */
+        .container {
+            width: 400px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        /* Title styling */
+        .form-title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Input field styling */
+        .input-group {
+            position: relative;
+            margin: 15px 0;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px 40px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        /* Icons in the input fields */
+        .input-group i {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #888;
+        }
+
+        /* Button styling */
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Separator and icon styles */
+        .or {
+            margin: 20px 0;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .icons i {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #555;
+            cursor: pointer;
+        }
+
+        /* Links for login */
+        .links {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .links a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="signup">
+        <h1 class="form-title">Register</h1>
+        <form method="post" action="register.php">
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="fName" id="fName" placeholder="First Name" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" name="lName" id="lName" placeholder="Last Name" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            
+            <!-- New fields for course, year, and university -->
+            <div class="input-group">
+                <i class="fas fa-book"></i>
+                <input type="text" name="course" id="course" placeholder="Course and Year" required>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-university"></i>
+                <input type="text" name="university" id="university" placeholder="University Name" required>
+            </div>
+            
+            <input type="submit" class="btn" value="Sign Up" name="signUp">
+        </form>
+        <p class="or">---------- or ----------</p>
+        <div class="icons">
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
+        </div>
+        <div class="links">
+            <a href="index1.html">Already Have an Account?</a>
+        </div>
+    </div>
+</body>
+</html>

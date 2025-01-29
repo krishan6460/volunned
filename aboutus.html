@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunned - About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" integrity="sha512-RXHQfGzhLBjFv4B9zS88kI3+26CsYXXnSwlGF+GxMgE7CCsKDgOVtOp6dDWvB80JqlBLyjoFrzCOQtpIWknp+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #e3f2fd, #ffffff);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Navbar */
+        header {
+            background: #0078d4;
+            color: white;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav a.logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav a.logo:hover {
+            color: #ffd700;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0078d4;
+        }
+
+        .description {
+            line-height: 1.8;
+            font-size: 1.2em;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        /* Profile Sections */
+        .profile-section {
+            margin-top: 40px;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .profile-card {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(to bottom, #f9fbfc, #e0f7fa);
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 2px solid #0078d4;
+        }
+
+        .profile-card h3 {
+            font-size: 1.5em;
+            color: #0078d4;
+        }
+
+        .profile-card p {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #0078d4;
+            color: white;
+            padding: 15px 0;
+            margin-top: 30px;
+            animation: fadeIn 2s ease;
+        }
+
+        footer p {
+            font-size: 0.9em;
+            margin: 0;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="nav">
+            <a href="index.html" class="logo"><i class='bx bx-home'></i> Volunned</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <p class="description">
+            Welcome to <strong>Volunned</strong>, your one-stop destination for exciting and engaging online events! 
+            We believe in fostering a community that thrives on innovation, collaboration, and personal growth.
+        </p>
+
+        <!-- Faculty Coordinator Section -->
+        <div class="profile-section">
+            <h2 class="section-title">Faculty Coordinators</h2>
+            <div class="profile-grid">
+                <div class="profile-card">
+                    <img src="images/faculty1.jpg" alt="Faculty 1">
+                    <h3>Dr. Neeta Singh</h3>
+                    <p>Coordinator<br>HOD(IT)</p>
+                </div>
+                <div class="profile-card">
+                    <img src="images/faculty2.jpg" alt="Faculty 2">
+                    <h3>Mr. Brijesh Sahani</h3>
+                    <p>Coordinator<br>Asst. Professor</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Student Profiles Section -->
+        <div class="profile-section">
+            <h2 class="section-title">Our Team</h2>
+            <div class="profile-grid">
+                <div class="profile-card">
+                    <img src="images/student1.jpg" alt="Student 1">
+                    <h3>Anuj Kumar Singh</h3>
+                    <p>Organizer<br>4th Year CSE</p>
+                </div>
+                <div class="profile-card">
+                    <img src="images/krishan.jpg" alt="Student 2">
+                    <h3>Krishan Chauhan</h3>
+                    <p>Web Developer<br>3rd Year IT</p>
+                </div>
+                <div class="profile-card">
+                    <img src="images/abhinav.jpg" alt="Student 3">
+                    <h3>Abhinav Dhiman</h3>
+                    <p>Web Developer<br>3rd Year IT</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 <a href="index.html">Volunned</a>. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

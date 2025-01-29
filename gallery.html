@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Volunned.in</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <header class="gallery-header">
+        <h1>Gallery</h1>
+        <p>The Java Mania Quiz has been successfully completed on 23 Nov. </p>
+    </header>
+    <main>
+        <section class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/gallery1.jpg" alt="Gallery Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="images/gallery3.jpg" alt="Gallery Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="images/gallery2.jpg" alt="Gallery Image 3">
+            </div>
+            <div class="slide fade">
+                <img src="images/gallery4.jpg" alt="Gallery Image 4">
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </section>
+        <section class="gallery-grid">
+            <img src="images/gallery1.jpg" alt="Gallery Image 1">
+            <img src="images/gallery3.jpg" alt="Gallery Image 3">
+            <img src="images/gallery4.jpg" alt="Gallery Image 4">
+        </section>
+    </main>
+    <script src="gallery.js"></script>
+</body>
+</html>

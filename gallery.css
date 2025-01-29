@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #f9f9f9, #eceff1);
+    color: #333;
+}
+
+/* Header */
+.gallery-header {
+    text-align: center;
+    padding: 20px;
+    background: #607d8b;
+    color: white;
+}
+.gallery-header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.gallery-header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    max-width: 80%;
+    margin: 20px auto;
+    border: 3px solid #607d8b;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.slide {
+    display: none;
+    position: relative;
+}
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+.caption {
+    position: absolute;
+    bottom: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Navigation Arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+.prev:hover, .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Animation */
+.fade {
+    animation: fadeEffect 1.5s ease-in-out;
+}
+@keyframes fadeEffect {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    max-width: 80%;
+    margin: 20px auto;
+}
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
